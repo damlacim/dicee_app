@@ -6,7 +6,11 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.indigo.shade200,
         appBar: AppBar(
-          title: Text('Dicee'),
+          title: Center(
+            child: Text(
+              'Dicee',
+            ),
+          ),
           backgroundColor: Colors.indigo.shade200,
         ),
         body: DicePage(),
@@ -24,13 +28,21 @@ class DicePage extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(16),
-              child: Image.asset('images/dice1.png'),
+              child: TextButton(
+                onPressed: () {},
+                child: Image.asset(
+                  'images/dice1.png',
+                ),
+              ),
             ),
           ),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(16),
-              child: Image.asset('images/dice1.png'),
+              child: TextButton(
+                onPressed: () {},
+                child: Image.asset('images/dice1.png'),
+              ),
             ),
           )
         ],
